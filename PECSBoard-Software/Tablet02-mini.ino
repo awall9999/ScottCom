@@ -39,7 +39,7 @@ time_BattCheck = millis();
 do {
 ScanMatrix(); // call void to check what key is pressed
 if(ResultMatrix != 0) {time_NotInUse=millis();PlayVoice(ResultMatrix);} //if a key is pressed reset Power On Timer and call void to play sound
-if ((unsigned long)(millis() - time_NotInUse) > 5*60000) {time_NotInUse=millis();PlayVoice(30);} //If Power On Timer reaches 1 min play Sound Nr 30 (Power Off reminder)
+if ((unsigned long)(millis() - time_NotInUse) > 5*60000) {time_NotInUse=millis();PlayVoice(30);} //If Power On Timer reaches 5 min play Sound Nr 30 (Power Off reminder)
 delay(100);
 ResultMatrix = 0;
  } while ((unsigned long)(millis() - time_BattCheck) < 3*60000); //Check Batterie every 3Minutes
