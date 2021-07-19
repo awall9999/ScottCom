@@ -11,6 +11,6 @@ void SetVolume(){
 void UpdateVolume(){
  VolumeVoice(VolumeSet);
  PlayVoice(ResultMatrix);
- EEPROM.update(0, VolumeSet); //If Volume has changed, Write new value to adress 1
+ EEPROM.update(0, VolumeSet); //If Volume has changed, Write new value to adress 0
   
 }
