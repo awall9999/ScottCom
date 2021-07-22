@@ -43,10 +43,11 @@ void setup() {
   digitalWrite(RowOne,HIGH);digitalWrite(RowTwo,HIGH);digitalWrite(RowThree,HIGH);digitalWrite(RowFour,HIGH);
   
   pinMode (Led,OUTPUT);
-  ResetVoice();
-  delay(500);
+  
   if (EEPROM.read(0)!= 99) {EEPROM.write(0,99);EEPROM.write(1,25);} //when adress 0 in EEPROM is not 99, then write 99 and init value on adress 1 to 25 for the voice volume. /first time run setup/
   VolumeSet=EEPROM.read(1); //Read adress 0 and set Volume variable
+  //Serial.println(VolumeSet);delay(5000);
+    
   VolumeVoice(VolumeSet); //Set Volume
   digitalWrite(Led,HIGH); //Power LED on
 }
