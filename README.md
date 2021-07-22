@@ -19,3 +19,7 @@ Electronic Part List:
 Craft Part List
 3mm MDF
 10x M3 10mm srews
+
+https://alainsprojects.com/2021/07/21/pecs-communication-board-v2/
+https://hackaday.io/project/180642-pecs-communication-board
+
