@@ -1,0 +1,8 @@
+Ver1.3.1 > Ver1.4
+
+By holding button 1,2,3 or 4 for 2sec, the power LED goes out.
+That means they have successfully changed the volume, where 1 is the minimum volume and 4 is the maximum volume.
+
+Selecting a folder is now possible via software.
+If you keep key 16 pressed for 5 seconds, the power LED goes out.
+You are now in programming mode. By pressing a key from 1 to 16, you select the corresponding folder. 
